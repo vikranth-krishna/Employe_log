@@ -11,7 +11,6 @@ import 'screens/add_employee_screen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   if (kIsWeb) {
-    // Instead of calling sqfliteFfiWebInit(), assign the web factory.
     databaseFactory = ffi_web.databaseFactoryFfiWeb;
   }
   runApp(
